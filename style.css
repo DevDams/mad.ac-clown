@@ -4,39 +4,32 @@
     box-sizing: border-box;
 }
 
-#drag {
+body {
+    font-family: sans-serif;
+    background-color: #F4C2A8;
+    background-image: url(images/background.png);
+    color: #40404C;
+}
+
+.drag {
     position: absolute;
     width: 250px;
     height: 320px;
-    border-radius: 25px;
-    background-color: teal;
-    color: white;
+    border-radius: 15px;
+    background-color: #F5F4F4;
     padding: 30px;
-    box-shadow: 0px 5px 55px -20px rgb(36, 36, 36);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     transform: translate(-50%, -50%);
-    cursor: grab;
     z-index: 0;
 }
 
-#drag p {
+.drag p {
     margin-top: 30px;
 }
 
-#drag2 {
-    position: absolute;
-    width: 250px;
-    height: 320px;
-    left: 350px;
-    border-radius: 25px;
-    background-color: tomato;
-    color: white;
-    padding: 30px;
-    box-shadow: 0px 5px 55px -20px rgb(36, 36, 36);
-    transform: translate(-50%, -50%);
-    cursor: grab;
-    z-index: 0;
-}
 
-#drag2 p {
-    margin-top: 30px;
-}
+/* rouge : #EE1414
+    bleu : #397AF6
+    bleu du bouton plus: #2663D8
+    entete des box : #EEEDED
+    couleur text entete des box : #AFAFAF */
