@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#drag {
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    border-radius: 25px;
+    background-color: teal;
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 55px -20px rgb(36, 36, 36);
+    transform: translate(-50%, -50%);
+    cursor: grab;
+    z-index: 0;
+}
+
+#drag p {
+    margin-top: 30px;
+}
+
+#drag2 {
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    left: 350px;
+    border-radius: 25px;
+    background-color: tomato;
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 55px -20px rgb(36, 36, 36);
+    transform: translate(-50%, -50%);
+    cursor: grab;
+    z-index: 0;
+}
+
+#drag2 p {
+    margin-top: 30px;
+}
