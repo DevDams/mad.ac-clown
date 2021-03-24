@@ -121,6 +121,7 @@ a {
 
 
 #drag2 {
+    left: 250px;
     width: 575px;
     height: 315px;
     padding: 45px 30px;
@@ -256,6 +257,8 @@ a {
 
 
 #drag5 {
+    top: 600px;
+    left: 50px;
     width: 390px;
     height: 500px;
 }
@@ -281,6 +284,8 @@ a {
 
 
 #drag6 {
+    right: 300px;
+    top: 100px;
     width: 390px;
     height: 260px;
 }
@@ -317,6 +322,8 @@ a {
 
 
 #drag7 {
+    right: 30px;
+    bottom: 30px;
     width: 304px;
     height: 376px;
 }
@@ -411,6 +418,21 @@ a {
 #drag8 {
     width: 340px;
     height: 587px;
+    left: 400px;
+    top: 200px;
+}
+
+#drag8 header {
+    position: absolute;
+    width: 100%;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #40404c07;
+    color: #505050b3;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 
