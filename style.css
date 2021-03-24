@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url(/fonts/Inter-Regular.woff2) format("woff2"),url(/fonts/Inter-Regular.woff) format("woff")
+    src: url(fonts/Inter-Regular.woff2) format("woff2"),url(fonts/Inter-Regular.woff) format("woff")
 }
 
 @font-face {
@@ -17,7 +19,7 @@
     font-style: italic;
     font-weight: 400;
     font-display: block;
-    src: url(/fonts/Inter-Italic.woff2) format("woff2"),url(/fonts/Inter-Italic.woff) format("woff")
+    src: url(fonts/Inter-Italic.woff2) format("woff2"),url(fonts/Inter-Italic.woff) format("woff")
 }
 
 @font-face {
@@ -25,7 +27,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: block;
-    src: url(/fonts/Inter-Medium.woff2) format("woff2"),url(/fonts/Inter-Medium.woff) format("woff")
+    src: url(fonts/Inter-Medium.woff2) format("woff2"),url(fonts/Inter-Medium.woff) format("woff")
 }
 
 @font-face {
@@ -33,7 +35,7 @@
     font-style: normal;
     font-weight: 600;
     font-display: block;
-    src: url(/fonts/Inter-SemiBold.woff2) format("woff2"),url(/fonts/Inter-SemiBold.woff) format("woff")
+    src: url(fonts/Inter-SemiBold.woff2) format("woff2"),url(fonts/Inter-SemiBold.woff) format("woff")
 }
 
 @font-face {
@@ -41,7 +43,7 @@
     font-style: italic;
     font-weight: 600;
     font-display: block;
-    src: url(/fonts/Inter-SemiBoldItalic.woff2) format("woff2"),url(/fonts/Inter-SemiBoldItalic.woff) format("woff")
+    src: url(fonts/Inter-SemiBoldItalic.woff2) format("woff2"),url(fonts/Inter-SemiBoldItalic.woff) format("woff")
 }
 
 @font-face {
@@ -49,7 +51,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: block;
-    src: url(/fonts/Inter-Bold.woff2) format("woff2"),url(/fonts/Inter-Bold.woff) format("woff")
+    src: url(fonts/Inter-Bold.woff2) format("woff2"),url(fontsInter-Bold.woff) format("woff")
 }
 
 @font-face {
@@ -57,7 +59,7 @@
     font-style: italic;
     font-weight: 700;
     font-display: block;
-    src: url(/fonts/Inter-BoldItalic.woff2) format("woff2"),url(/fonts/Inter-BoldItalic.woff) format("woff")
+    src: url(fonts/Inter-BoldItalic.woff2) format("woff2"),url(fonts/Inter-BoldItalic.woff) format("woff")
 }
 
 
@@ -65,8 +67,15 @@ body {
     font-family: "Inter";
     background-color: #F4C2A8;
     background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     color: #505050;
     overflow: hidden;
+}
+
+ul li {
+    list-style: none;
 }
 
 a {
@@ -77,7 +86,7 @@ a {
 
 .drag {
     position: absolute;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #F5F4F4;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     transform: translate(-30%, -30%);
@@ -99,8 +108,8 @@ a {
 #drag {
     width: 320px;
     height: 320px;
-    right: 50px;
-    top: 100px;
+    left: 220px;
+    top: 130px;
 }
 
 #drag header {
@@ -113,7 +122,8 @@ a {
     border-top-right-radius: 15px;
     height: 41px;
     font-weight: bolder;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -121,10 +131,11 @@ a {
 
 
 #drag2 {
-    left: 250px;
+    left: 770px;
+    top: 150px;
     width: 575px;
     height: 315px;
-    padding: 45px 30px;
+    padding: 45px 40px;
 }
 
 #drag2 h1 {
@@ -159,12 +170,12 @@ a {
 
 
 #drag3 {
+    right: 530px;
+    top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 600px;
-    left: 400px;
     width: 78px;
     height: 156px;
     transform: translate(-20%, -20%);
@@ -202,8 +213,8 @@ a {
 #drag4 {
     width: 360px;
     height: 400px;
-    top: 350px;
-    left: 800px;
+    top: 660px;
+    left: 180px;
     background-image: url(images/latest-work1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,8 +268,8 @@ a {
 
 
 #drag5 {
-    top: 600px;
-    left: 50px;
+    top: 590px;
+    left: 930px;
     width: 390px;
     height: 500px;
 }
@@ -275,7 +286,37 @@ a {
 }
 
 #drag5 .text {
-    padding: 30px 25px;
+    padding: 25px 25px;
+}
+
+#drag5 .text h2 {
+    font-weight: 500;
+}
+
+#drag5 .text p {
+    margin-top: 3px;
+}
+
+#drag5 .text ul {
+    motion-path: 10px;
+}
+
+#drag5 .text ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    border-bottom: 1px solid #50505028;
+}
+
+#drag5 .text ul li h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#drag5 .text ul li p {
+    font-size: 16px;
+    color: #50505099;
 }
 
 
@@ -284,10 +325,10 @@ a {
 
 
 #drag6 {
-    right: 300px;
-    top: 100px;
+    top: 760px;
+    left: 680px;
     width: 390px;
-    height: 260px;
+    height: 200px;
 }
 
 #drag6 header {
@@ -298,6 +339,7 @@ a {
     background-color: #40404c0b;
     color: #505050b3;
     font-weight: 600;
+    font-size: 13px;
 }
 
 #drag6 .video {
@@ -322,16 +364,18 @@ a {
 
 
 #drag7 {
-    right: 30px;
-    bottom: 30px;
+    right: 330px;
+    bottom: -10px;
     width: 304px;
     height: 376px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #drag7 .map {
+    position: absolute;
     height: 100%;
     height: 100%;
-    overflow: hidden;
     border-radius: 15px;
 }
 
@@ -418,12 +462,11 @@ a {
 #drag8 {
     width: 340px;
     height: 587px;
-    left: 400px;
-    top: 200px;
+    right: 100px;
+    top: 220px;
 }
 
 #drag8 header {
-    position: absolute;
     width: 100%;
     height: 41px;
     display: flex;
@@ -434,6 +477,20 @@ a {
     font-weight: 600;
     font-size: 14px;
 }
+
+#drag8 .text {
+    padding: 15px 20px;
+}
+
+#drag8 .text h2 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 200;
+    color: #397af6;
+}
+
+
 
 
 /* All the buttons */
@@ -451,36 +508,36 @@ a {
 
 
 #dragBtn_1 {
-    top: 200px;
-    left: 400px;
+    top: 420px;
+    left: 260px;
     width: 220px;
     height: 83px;
 }
 
 #dragBtn_2 {
-    top: 100px;
-    left: 400px;
+    top: 580px;
+    left: 550px;
     width: 209px;
     height: 83px;
 }
 
 #dragBtn_3 {
-    top: 200px;
-    left: 700px;
+    top: 470px;
+    left: 610px;
     width: 129px;
     height: 63px;
 }
 
 #dragBtn_4 {
-    top: 300px;
-    left: 250px;
+    right: 90px;
+    bottom: 150px;
     width: 158px;
     height: 63px;
 }
 
 #dragBtn_5 {
-    top: 350px;
-    left: 450px;
+    right: 550px;
+    bottom: 510px;
     width: 157px;
     height: 63px;
 }
