@@ -358,6 +358,21 @@ a {
     border-bottom-right-radius: 15px;
 }
 
+#drag6 .video svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#drag6 .video svg.pause_btn {
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 225px;
+}
+
 
 
 
@@ -373,10 +388,15 @@ a {
 }
 
 #drag7 .map {
-    position: absolute;
+    position: relative;
     height: 100%;
     height: 100%;
     border-radius: 15px;
+    background-image: url('images/map.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
 }
 
 #drag7 header {
@@ -459,6 +479,8 @@ a {
 
 
 
+
+
 #drag8 {
     width: 340px;
     height: 587px;
@@ -488,6 +510,48 @@ a {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 200;
     color: #397af6;
+}
+
+#drag8 .list {
+    padding: 0 22px;
+}
+
+#drag8 .list .item {
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    color: #505050;
+    border-bottom: 1px solid #50505027;
+}
+
+#drag8 .list .item input.input {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #505050a1;
+    margin: 0 10px 0 -5px;
+    background-color: transparent;
+    appearance: none;
+}
+
+#drag8 .list .item p {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#drag8 .list .add_btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #397af6;
 }
 
 

@@ -314,3 +314,22 @@ window.addEventListener('mouseup', (e) => {
   window.removeEventListener('mousemove', dragBtn_5)
   btn_5.style.zIndex -= 1
 })
+
+
+
+// PLAY THE VIDEO
+let play_btn = document.querySelector('.play_btn')
+let pause_btn = document.querySelector('.pause_btn')
+let video = document.querySelector('.video_video')
+
+play_btn.addEventListener('click', () => {
+  video.play()
+  play_btn.style.display = "none"
+  pause_btn.style.display = "inline"
+})
+
+pause_btn.addEventListener('click', () => {
+  video.pause()
+  play_btn.style.display = "inline"
+  pause_btn.style.display = "none"
+})
