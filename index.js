@@ -126,16 +126,3 @@ dragEl(document.querySelector('#dragBtn_5'))
 
 
 
-// dragBox(document.querySelector('#drag2'))
-// dragBox(document.querySelector('#drag3'))
-// dragBox(document.querySelector('#drag4'))
-// dragBox(document.querySelector('#drag5'))
-// dragBox(document.querySelector('#drag6'))
-// dragBox(document.querySelector('#drag7'))
-// dragBox(document.querySelector('#drag8'))
-
-// dragBox(document.querySelector('#dragBtn_1'))
-// dragBox(document.querySelector('#dragBtn_2'))
-// dragBox(document.querySelector('#dragBtn_3'))
-// dragBox(document.querySelector('#dragBtn_4'))
-// dragBox(document.querySelector('#dragBtn_5'))
